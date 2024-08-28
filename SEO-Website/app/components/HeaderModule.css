@@ -1,0 +1,334 @@
+.nav-container {
+  position: relative;
+  /* height: 100vh; */
+  padding: 10px;
+  margin: 0;
+  z-index: 99;
+
+}
+
+header {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 20px;
+  z-index: 99;
+
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 99 ; 
+}
+
+nav .logo img {
+  height: 60px;
+}
+
+
+header nav .menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+header nav .menu ul li {
+  position: relative;
+}
+
+header nav .menu ul li .link {
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: all .3 ease-in-out;
+  padding: 5px 0px;
+}
+
+
+
+header nav .menu ul li .link:hover {
+  color: #ff6004;
+}
+
+header nav .menu ul li ul {
+  display: none;
+  transition: all .3s ease-in-out;
+  position: absolute;
+}
+
+
+header nav .menu ul li:hover>ul {
+  display: block;
+  transition: all .5s ease-in-out;
+  padding: 15px;
+  width: 210px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 20px;
+  left: 0;
+  line-height: 40px;
+}
+
+header nav .menu ul li ul li .link:hover {
+  margin-left: 5px;
+  transition: all 0.3s ease-in;
+}
+
+
+
+header nav .let-chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+header nav .let-chat .icon {
+  font-size: 28px;
+}
+
+.let-chat .contact img {
+  width: 50px;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-close {
+  display: none;
+}
+
+.bgcolor {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -100%;
+
+}
+
+@media (max-width: 1170px) {
+
+  .nav-container {
+    /* height: 100vh; */
+    padding: 10px;
+    margin: 0;
+    /* height: 100vh; */
+    position: relative;
+    z-index: 999;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bgcolor {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transition: all 0.2s ease-out;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #ff6004a5;
+    width: 100%;
+  }
+
+  .nav-close {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 999;
+    cursor: pointer;
+  }
+
+  header nav .menu .ul {
+    display: none;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s ease-out;
+    right: -100%;
+    background-color: #fff;
+    width: 320px;
+    height: 100vh;
+    padding: 80px 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 55px;
+    /* gap: 45px; */
+  }
+
+  header nav .menu ul li {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #222;
+  }
+
+  header nav .menu ul li .link {
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all .3 ease-in-out;
+    padding: 5px 0px;
+  }
+
+  header nav .menu ul li .link:hover {
+    color: #ff6004;
+  }
+
+  header nav .menu ul li ul {
+    display: none;
+    height: min-content;
+    transition: all .3s ease-in-out;
+    position: relative;
+  }
+
+
+  header nav .menu ul li:hover>ul {
+    display: block;
+    transition: all .5s ease-in-out;
+    padding: 0px 15px;
+    width: 100%;
+    height: min-content;
+    position: relative;
+    border-radius: 0px;
+    line-height: 40px;
+  }
+
+  header nav .menu ul li ul li {
+    border-bottom: none;
+  }
+
+  header nav .menu .ul li ul li .link:hover {
+    margin-left: 5px;
+    transition: all 0.3s ease-in;
+  }
+
+  header nav .menu .showMenu {
+    display: block;
+    position: absolute;
+    top: 0px;
+    transition: all 0.3s ease-out;
+    right: 0;
+    background-color: #fff;
+    width: 320px;
+    height: 100vh;
+    padding: 80px 20px;
+    justify-content: center;
+    align-items: center;
+    line-height: 55px;
+    /* gap: 45px; */
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .nav-container {
+    /* height: 100vh; */
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    z-index: 999;
+  }
+
+
+  nav .logo img {
+    height: 50px;
+  }
+
+
+  header nav .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+  }
+
+  header nav .menu ul li {
+    position: relative;
+  }
+
+  header nav .menu ul li .link {
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: all .3 ease-in-out;
+    padding: 5px 0px;
+  }
+
+
+
+  header nav .menu ul li .link:hover {
+    color: #ff6004;
+  }
+
+  header nav .menu ul li ul {
+    display: none;
+    transition: all .3s ease-in-out;
+    position: absolute;
+  }
+
+
+  header nav .menu ul li:hover>ul {
+    display: block;
+    transition: all .5s ease-in-out;
+    padding: 0px 14px;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    border-radius: 20px;
+    left: 0;
+    line-height: 40px;
+  }
+
+  header nav .menu ul li ul li .link:hover {
+    margin: 0px 0px 10px 10px;
+    transition: all 0.3s ease-in;
+  }
+
+
+
+  header nav .let-chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    letter-spacing: -0.99px;
+  }
+
+  .text-icon {
+    display: none;
+  }
+
+  .let-chat .contact img {
+    width: 45px;
+  }
+
+  .nav-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bgcolor {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transition: all 0.2s ease-out;
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: #ff6004a5;
+    width: 100%;
+  }
+
+}

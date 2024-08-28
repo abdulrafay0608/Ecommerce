@@ -1,0 +1,130 @@
+
+
+.about-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 10%;
+  }
+  
+  
+  .column-50 {
+    flex: 1;
+  }
+  
+  /* Styling for the image */
+  .shape-img-bg {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  
+  .shape-img-bg img {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+    /* position: absolute; */
+  }
+  
+  /* .img-bg-shape {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  } */
+  
+  
+  
+  .about-heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: #ff6004;
+  }
+  
+  .about-heading .dote-orange {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #ff6004, #ff6004, #FE9E30);
+  }
+  
+  .about-heading .dote-blue {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #103ce7, #103ce7, #64E9FF);
+  }
+  
+  
+  .about-text-container h2 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  .about-text-container>p {
+    color: #666;
+  }
+  
+  .styled-list-container{
+    margin: 30px 0px ;
+  }
+  
+  
+  .about-text-container .styled-list {
+    display: flex;
+    align-items: center;
+    /* margin: 20px 0px; */
+  }
+  
+  .about-text-container .styled-list li {
+    padding: 12px 20px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  
+  .about-text-container .styled-list li .icon {
+  
+    font-size: 22px;
+    color: #ff6004;
+  }
+  
+  
+  .discover-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    font-weight: 600;
+    color: #fff;
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all .3s ease-in;
+    background: linear-gradient(to right, #ff6004, #ff6004, #FE9E30);
+  }
+  
+  .discover-more:hover {
+    transition: all 0.5s ease-in;
+    background: linear-gradient(to right, #103ce7, #103ce7, #64E9FF);
+  }
+  
+  .discover-more .icon {
+    background-color: #fff;
+    padding: 8px;
+    font-size: 28px;
+    border-radius: 50%;
+  }
